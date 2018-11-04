@@ -15,6 +15,7 @@ namespace WindowsFormsApp2
     {
         public String sourceDir;
         public String outputFile;
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace WindowsFormsApp2
         {
             using(var folderBrowserDialog = new FolderBrowserDialog())
             {
+                folderBrowserDialog.SelectedPath = "C:\\";
                 if(folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
                     sourceDir = folderBrowserDialog.SelectedPath;
