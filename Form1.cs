@@ -52,7 +52,6 @@ namespace WindowsFormsApp2
 
         private void Generate_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(sourceDir);
             GenerateJson(outputFile, sourceDir);
         }
         private void GenerateJson(String output, String input)
